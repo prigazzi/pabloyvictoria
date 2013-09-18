@@ -1,5 +1,5 @@
 <?php
-	$conn = mysql_connect('mysql.pabloyvictoria.com.ar', 'dbadmin', 'syncromaster') or die('Ups. Hay un problema con la base de datos.');
+	$conn = mysql_connect('DB_HOST', 'DB_USER', 'DB_PASSWORD') or die('Ups. Hay un problema con la base de datos.');
 	mysql_select_db('casamiento', $conn);
 
 	$name    = mysql_real_escape_string($_POST['name']);
